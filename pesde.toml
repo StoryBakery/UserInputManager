@@ -1,0 +1,34 @@
+name = "story_bakery/user_input_manager"
+version = "0.1.0"
+license = "MIT"
+includes = [
+    "pesde.toml",
+    "LICENSE",
+    "README.md",
+    ".pesde/scripts/roblox_sync_config_generator.luau",
+    ".pesde/scripts/sourcemap_generator.luau",
+    "src/**/*.luau",
+    "src/**/*.json",
+    "tests/**/*.luau",
+]
+
+[target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+[indices]
+default = "https://github.com/pesde-pkg/index"
+
+[dependencies]
+KeyStore = { workspace = "story_bakery/key_store", version = "^" }
+Maid = { workspace = "story_bakery/maid", version = "^" }
+Signal = { workspace = "story_bakery/signal", version = "^" }
+TableUtil = { workspace = "story_bakery/table_util", version = "^" }
+
+[scripts]
+roblox_sync_config_generator = ".pesde/scripts/roblox_sync_config_generator.luau"
+
+[engines]
+pesde = "^0.7.0"
+lune = "^0.10.2"
