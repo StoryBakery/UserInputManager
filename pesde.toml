@@ -20,11 +20,14 @@ build_files = ["src"]
 [indices]
 default = "https://github.com/pesde-pkg/index"
 
+[wally_indices]
+default = "https://github.com/UpliftGames/wally-index"
+
 [dependencies]
-KeyStore = { workspace = "story_bakery/key_store", version = "^" }
-Maid = { workspace = "story_bakery/maid", version = "^" }
-Signal = { workspace = "story_bakery/signal", version = "^" }
-TableUtil = { workspace = "story_bakery/table_util", version = "^" }
+KeyStore = { repo = "Story-Bakery/KeyStore", rev = "main" }
+Maid = { repo = "Story-Bakery/Maid", rev = "main" }
+Signal = { repo = "Story-Bakery/Signal", rev = "main" }
+TableUtil = { repo = "Story-Bakery/TableUtil", rev = "main" }
 
 [scripts]
 roblox_sync_config_generator = ".pesde/scripts/roblox_sync_config_generator.luau"
