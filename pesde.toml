@@ -1,4 +1,4 @@
-name = "story_bakery/user_input_manager"
+name = "storybakery/user_input_manager"
 version = "0.1.0"
 license = "MIT"
 includes = [
